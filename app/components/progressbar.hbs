@@ -1,0 +1,32 @@
+{{yield}}
+
+
+{{!-- <!-- app/components/my-progress-bar.hbs --> --}}
+<div class="progress w-50 h-25 border my-auto" role="progressbar" aria-label="Example with label"
+    aria-valuenow={{this.progressValue}} aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar" style={{this.barStyle}}></div>
+</div>
+
+<div>
+    <button {{on 'click' this.increaseProgress}} class="rounded-circle border border-2 border-primary me-2"
+        type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon text-primary" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+
+    {{!-- <button {{on 'click' this.decreaseProgress}} class={{if
+        (this.progress===100) 'disabled' 'rounded-circle border border-2 border-primary me-2' }} type="button"
+        data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" disabled={{this.progress 100}}>
+        <span class="carousel-control-prev-icon text-primary" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button> --}}
+
+    <button {{on 'click' this.increaseProgress}} class="rounded-circle border border-2 border-primary" type="button"
+        data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+{{!--
+<button type="button" {{on 'click' this.decreaseProgress}}>Decrease Progress</button>
+<button type="button" {{on 'click' this.increaseProgress}}>Increase Progress</button> --}}

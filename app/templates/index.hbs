@@ -1,0 +1,351 @@
+{{!-- banner --}}
+<section class="bg-secondary border application">
+    <div class="container border mx-auto text-center pt-5 pb-5">
+        <div>
+            <h1 class="fs-1 pt-3 pb-5">Learn new skills. Prove your <br> potential.</h1>
+        </div>
+        {{!-- <!-- templates/components/my-card.hbs --> --}}
+
+        <div class="card-group gap-3">
+            <div class="card rounded-1 w-25">
+                <img src="/assets/image1.png" class="card-img-top mt-3 w-50 h-50 px-auto mx-auto my-auto border"
+                    alt="...">
+                <div class="card-body mt-1 pt-0">
+                    {{!-- <h5 class="card-title">Card title</h5> --}}
+                    <p class="card-text border  ">Data Science</p>
+                </div>
+            </div>
+            <div class="card rounded-1 w-25">
+                <img src="/assets/image2.png" class="card-img-top mt-3 w-50 h-50 px-auto mx-auto my-auto border"
+                    alt="...">
+                <div class="card-body mt-1 pt-0">
+                    {{!-- <h5 class="card-title">Card title</h5> --}}
+                    <p class="card-text border">Programming & Develelopment</p>
+                </div>
+            </div>
+            <div class="card rounded-1 w-25">
+                <img src="/assets/image3.png" class="card-img-top mt-3 w-50 h-50 px-auto mx-auto my-auto border"
+                    alt="...">
+                <div class="card-body mt-1 pt-0">
+                    {{!-- <h5 class="card-title">Card title</h5> --}}
+                    <p class="card-text border">Artificial Intelligence</p>
+                </div>
+            </div>
+            <div class="card rounded-1 w-25">
+                <img src="/assets/image4.png" class="card-img-top mt-3 w-50 h-50 px-auto mx-auto my-auto border"
+                    alt="...">
+                <div class="card-body mt-1 pt-0">
+                    {{!-- <h5 class="card-title">Card title</h5> --}}
+                    <p class="card-text border  ">Business</p>
+                </div>
+            </div>
+            <div class="card rounded-1 w-25">
+                <img src="/assets/image5.png" class="card-img-top mt-3 w-50 h-50 px-auto mx-auto my-auto border"
+                    alt="...">
+                <div class="card-body mt-1 pt-0">
+                    {{!-- <h5 class="card-title">Card title</h5> --}}
+                    <p class="card-text border  ">Autonomous Systems</p>
+                </div>
+            </div>
+            <div class="card rounded-1 w-25">
+                <img src="/assets/image6.png" class="card-img-top mt-3 w-50 h-50 px-auto mx-auto my-auto border"
+                    alt="...">
+                <div class="card-body mt-1 pt-0">
+                    {{!-- <h5 class="card-title">Card title</h5> --}}
+                    <p class="card-text border  ">Product Management</p>
+                </div>
+            </div>
+            <div class="card rounded-1 w-25">
+                <img src="/assets/image7.png" class="card-img-top mt-3 w-50 h-50 px-auto mx-auto my-auto border"
+                    alt="...">
+                <div class="card-body mt-1 pt-0">
+                    {{!-- <h5 class="card-title">Card title</h5> --}}
+                    <p class="card-text border">Cloud Computing</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+{{!-- slide --}}
+<div id="carouselExampleIndicators" class="carousel slide mt-5 bg-light py-5" data-bs-ride="carousel">
+
+    <div class="d-flex border py-2">
+        <div class="d-flex justify-content-between border container">
+            <div>
+                <h4>Recomended For You</h4>
+            </div>
+
+
+            {{!-- <div class="d-flex"> --}}
+                {{!-- <div class="border"> --}}
+
+                    {{!-- </div> --}}
+
+                {{!-- Progress bar --}}
+                {{!-- indicats the slide volumn --}}
+                {{!-- TODO: it needs a progress bar that connected to the slide volumn
+                prev and next e click korle progress barbe and kombe --}}
+                {{!-- <div class="border border-1 w-25 h-auto rounded-5 my-auto bg-light d-flex flex-row">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active my-auto" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2" class="active bg-primary"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div> --}}
+
+
+                {{!-- next & prev btn --}}
+                <div class="d-flex justify-content-evenly w-50 border">
+                    {{!-- <div class="progress w-50 h-25 border my-auto" role="progressbar"
+                        aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar w-50"></div>
+                    </div> --}}
+
+                    <Progressbar></Progressbar>
+
+                </div>
+                {{!--
+            </div> --}}
+        </div>
+    </div>
+
+
+    <div class="carousel-inner w-100 container mx-auto">
+        <div class="carousel-item active">
+            {{!-- <img src="https://via.placeholder.com/800x400" class="d-block w-100 " alt="Slide 1"> --}}
+            <div class="card-group gap-3">
+                <div class="card rounded-1 w-25">
+                    <img src="/assets/image1.png" class="card-img-top mt-3 w-50 h-50 px-auto mx-auto my-auto border"
+                        alt="...">
+                    <div class="card-body mt-1 pt-0">
+                        {{!-- <h5 class="card-title">Card title</h5> --}}
+                        <p class="card-text border  ">Data Science</p>
+                    </div>
+                </div>
+                <div class="card rounded-1 w-25">
+                    <img src="/assets/image2.png" class="card-img-top mt-3 w-50 h-50 px-auto mx-auto my-auto border"
+                        alt="...">
+                    <div class="card-body mt-1 pt-0">
+                        {{!-- <h5 class="card-title">Card title</h5> --}}
+                        <p class="card-text border">Programming & Develelopment</p>
+                    </div>
+                </div>
+                <div class="card rounded-1 w-25">
+                    <img src="/assets/image2.png" class="card-img-top mt-3 w-50 h-50 px-auto mx-auto my-auto border"
+                        alt="...">
+                    <div class="card-body mt-1 pt-0">
+                        {{!-- <h5 class="card-title">Card title</h5> --}}
+                        <p class="card-text border">Programming & Develelopment</p>
+                    </div>
+                </div>
+                <div class="card rounded-1 w-25">
+                    <img src="/assets/image2.png" class="card-img-top mt-3 w-50 h-50 px-auto mx-auto my-auto border"
+                        alt="...">
+                    <div class="card-body mt-1 pt-0">
+                        {{!-- <h5 class="card-title">Card title</h5> --}}
+                        <p class="card-text border">Programming & Develelopment</p>
+                    </div>
+                </div>
+                <div class="card rounded-1 w-25">
+                    <img src="/assets/image2.png" class="card-img-top mt-3 w-50 h-50 px-auto mx-auto my-auto border"
+                        alt="...">
+                    <div class="card-body mt-1 pt-0">
+                        {{!-- <h5 class="card-title">Card title</h5> --}}
+                        <p class="card-text border">Programming & Develelopment</p>
+                    </div>
+                </div>
+                <div class="card rounded-1 w-25">
+                    <img src="/assets/image2.png" class="card-img-top mt-3 w-50 h-50 px-auto mx-auto my-auto border"
+                        alt="...">
+                    <div class="card-body mt-1 pt-0">
+                        {{!-- <h5 class="card-title">Card title</h5> --}}
+                        <p class="card-text border">Programming & Develelopment</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {{!-- old carousal --}}
+        <div class="carousel-item w-50">
+            {{!-- <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Slide 2"> --}}
+            <div class="card-group gap-3">
+                <div class="card rounded-1 w-25">
+                    <img src="/assets/image1.png" class="card-img-top mt-3 w-50 h-50 px-auto mx-auto my-auto border"
+                        alt="...">
+                    <div class="card-body mt-1 pt-0">
+                        {{!-- <h5 class="card-title">Card title</h5> --}}
+                        <p class="card-text border  ">Data Science</p>
+                    </div>
+                </div>
+                <div class="card rounded-1 w-25">
+                    <img src="/assets/image2.png" class="card-img-top mt-3 w-50 h-50 px-auto mx-auto my-auto border"
+                        alt="...">
+                    <div class="card-body mt-1 pt-0">
+                        {{!-- <h5 class="card-title">Card title</h5> --}}
+                        <p class="card-text border">Programming & Develelopment</p>
+                    </div>
+                </div>
+                <div class="card rounded-1 w-25">
+                    <img src="/assets/image2.png" class="card-img-top mt-3 w-50 h-50 px-auto mx-auto my-auto border"
+                        alt="...">
+                    <div class="card-body mt-1 pt-0">
+                        {{!-- <h5 class="card-title">Card title</h5> --}}
+                        <p class="card-text border">Programming & Develelopment</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        {{!-- old --}}
+        {{!-- <div class="w-100 d-flex">
+            <div class="carousel-item d-flex">
+                <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Slide 3">
+                <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Slide 3">
+                <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Slide 3">
+                <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Slide 3">
+            </div>
+            <div class="carousel-item d-flex">
+                <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Slide 3">
+                <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Slide 3">
+                <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Slide 3">
+                <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Slide 3">
+            </div>
+            <div class="carousel-item d-flex">
+                <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Slide 3">
+                <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Slide 3">
+                <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Slide 3">
+                <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Slide 3">
+            </div>
+            <div class="carousel-item d-flex">
+                <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Slide 3">
+                <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Slide 3">
+                <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Slide 3">
+                <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Slide 3">
+            </div>
+        </div> --}}
+
+    </div>
+</div>
+
+
+
+
+{{!-- udacity difference section --}}
+<div class="border bg-white py-5 px-5 me-0 d-flex justify-content-between">
+    <div class="w-50">
+        {{!-- --}}
+        {{!-- <h1>asdjasidfjs</h1> --}}
+    </div>
+    <div class="w-50 d-grid gap-2">
+        <h2 class="mb-4">The Udacity Difference</h2>
+        <div>
+            <h6>Prove Mastery Through Hands-On Projects</h6>
+            <p>Our open-ended projects are modeled after real-world workplace scenarios, and require in-depth critical
+                thinking and creative solutions.</p>
+        </div>
+
+        <div>
+            <h6>Succeed with Personalized Feedback</h6>
+            <p>Every project receives personalized feedback from industry experts, and our mentors are available to
+                answer
+                questions whenever you're feeling stuck.</p>
+        </div>
+    </div>
+</div>
+
+
+
+{{!-- learners love udacity card section 3 cards and info below--}}
+<div class="bg-light">
+    <div class="container py-5">
+        <h3>Learners Love Udacity</h3>
+        <div class="card-group gap-5">
+            <div class="card rounded-1 w-25 py-4 px-2 rounded-bottom-2">
+                <div class="card-body mt-3 pt-0">
+                    {{!-- <h5 class="card-title">Card title</h5> --}}
+                    <p class="card-text border">Udacity helped me gain on-the-job confidence, build a portfolio, and
+                        earn a
+                        microcredential to share with prospective employers.</p>
+                    <p class="card-text border">Ben, Business Analyst Nanodegree program graduate</p>
+                </div>
+            </div>
+            <div class="card border rounded-1 w-25 py-4 px-2 rounded-bottom-2">
+                <div class="card-body mt-3 pt-0">
+                    {{!-- <h5 class="card-title">Card title</h5> --}}
+                    <p class="card-text border">Udacity helped me gain on-the-job confidence, build a portfolio, and
+                        earn a
+                        microcredential to share with prospective employers.</p>
+                    <p class="card-text border">Ben, Business Analyst Nanodegree program graduate</p>
+                </div>
+            </div>
+            <div class="card border rounded-1 w-25 py-4 px-2 rounded-bottom-2">
+                <div class="card-body mt-3 pt-0">
+                    {{!-- <h5 class="card-title">Card title</h5> --}}
+                    <p class="card-text border">Udacity helped me gain on-the-job confidence, build a portfolio, and
+                        earn a
+                        microcredential to share with prospective employers.</p>
+                    <p class="card-text border">Ben, Business Analyst Nanodegree program graduate</p>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        {{!-- ratings --}}
+        <div class="d-flex border mx-5 my-5">
+            <div class="mx-auto my-auto">
+                <h4 class="fw-bold">facebook</h4>
+                <p>*****</p>
+                <p class="underline">2083 Reviews -></p>
+            </div>
+            <div class="mx-auto my-auto">
+                <h4 class="fw-bold">COURSR <br> REPORT</h4>
+                <p>*****</p>
+                <p class="underline">624 Reviews -></p>
+            </div>
+            <div class="mx-auto my-auto">
+                <h4 class="fw-bold">switchup</h4>
+                <p>*****</p>
+                <p class="underline">2083 Reviews -></p>
+            </div>
+            <div class="mx-auto my-auto">
+                <h4 class="fw-bold">Trustpilot</h4>
+                <p>*****</p>
+                <p class="underline">2573 Reviews -></p>
+            </div>
+            <div class="mx-auto my-auto">
+                <h4 class="fw-bold">facebook</h4>
+                <p>*****</p>
+                <p class="underline">1405 Reviews -></p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    {{!-- udacity for business --}}
+    <div class="container bg-primary-subtle border border-1 d-flex">
+        <div class="w-50 p-5 mx-3 my-2 border">
+            <h3>Udacity for Business</h3>
+            <p>Small teams to large enterprises</p>
+            <p>Scale skill development for your business. We combine technology training for employees with industry
+                experts, mentors, and projects, for critical thinking that pushes innovation. Our business training
+                systems have proven results.</p>
+            <button type="button" class="d-block btn btn-lg btn-primary mb-2">Learn More -></button>
+            <button type="button" class="d-block btn btn-lg btn-outline-primary">Contack Us -></button>
+        </div>
+
+        <div class="w-50 p-4 border">
+            <img class="w-75 border" src="/assets/image1.png" alt="">
+        </div>
+    </div>
+</div>

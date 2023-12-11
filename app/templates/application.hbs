@@ -1,7 +1,79 @@
 {{page-title "Udacity"}}
 
-{{! The following component displays Ember's default welcome message. }}
-<WelcomePage />
-{{! Feel free to remove this! }}
+{{!-- whole body is light color others are diff white n all --}}
 
-{{outlet}}
+{{! The following component displays Ember's default welcome message. }}
+
+
+{{!-- application --}}
+{{!-- home page k index.hbs nam diye dibo --}}
+<div>
+    {{!-- navbar --}}
+    <BsNavbar class="border bg-white my-auto" as |navbar|>
+        <LinkTo @route="index" class="navbar-brand ms-5 me-5 fs-3">UDACITY</LinkTo>
+        <navbar.toggle />
+        <navbar.content>
+            <navbar.nav as |nav|>
+                <nav.dropdown class=" fs-6 text-dark px-2 ms-2 me-2 my-auto" as |dd|>
+                    <dd.toggle>Learn <span class="caret"></span></dd.toggle>
+                    <dd.menu as |ddm|>
+                        <ddm.item>
+                            <ddm.link-to @route="index">Home</ddm.link-to>
+                        </ddm.item>
+                        <ddm.item>
+                            <ddm.link-to @route="index">Home</ddm.link-to>
+                        </ddm.item>
+                    </dd.menu>
+                </nav.dropdown>
+                {{!-- <nav.item>
+                    <nav.link-to @route="index">Learn</nav.link-to>
+                </nav.item> --}}
+                <nav.item class=" fs-6 text-dark px-2 my-auto">
+                    <nav.link-to @route="index">Catalog</nav.link-to>
+                </nav.item>
+                <nav.item class="fs-6 text-dark px-2 my-auto">
+                    <nav.link-to @route="index">Business</nav.link-to>
+                </nav.item>
+                <nav.item class=" fs-6 text-dark px-2 my-auto">
+                    <nav.link-to @route="index">Government</nav.link-to>
+                </nav.item>
+                {{!-- search field --}}
+
+                <div class="d-flex align-items-center flex-column flex-lg-row ">
+                    <label for="">
+                        <form class="me-2 mb-2 mb-lg-0 px-2">
+                            <Input @type="text" class="form-control form-control-lg bg-light rounded-5 px-4 me-5"
+                                placeholder="What do you want to learn?" />
+                        </form>
+                    </label>
+                    <div class=" px-2 ms-2">
+                        <a class="btn btn-outline-primary btn-lg border-2 rounded-1" href="">Log in</a>
+                        <a class="btn btn-primary btn-lg border-2 rounded-1 ms-1" href="">Join for free</a>
+                    </div>
+                </div>
+            </navbar.nav>
+        </navbar.content>
+    </BsNavbar>
+    {{outlet}}
+    {{!-- footer --}}
+    <footer></footer>
+    <div>
+        {{!-- <div>
+            <h3>Company</h3>
+        </div>
+        <div>
+            <h3>Udacity School</h3>
+        </div>
+        <div>
+            <h3>Featured Programs</h3>
+        </div>
+        <div>
+            <h3>Only at Udacity</h3>
+        </div> --}}
+
+        <div>
+            {{!-- others --}}
+        </div>
+    </div>
+    
+</div>
